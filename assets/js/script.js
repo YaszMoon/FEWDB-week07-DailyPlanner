@@ -17,7 +17,7 @@ rowEl.addClass("row time-block");
 var timeEl = $('<div class="hour col-1">');
 timeEl.text(time)
 // Create div for description class="description col-8"
-var descripEl = $('<div class="description textarea col-10" type="input">');
+var descripEl = $('<div class="description textarea col-10">');
 // Create i for save button class="saveBtn col-2 fa-solid fa-floppy-disk"
 var btnEl = $('<div class="saveBtn col-1"><i class="fas fa-save"></div>');
 rowEl.append(timeEl, descripEl, btnEl);
@@ -28,10 +28,12 @@ return rowEl
 // Placeholder to check that function works
 var x = '9AM'
 
+for (var i=0; i<timeSlots.length; i++) {
+   var newRow = createRow(timeSlots[i])
+containerEl.append(newRow); 
+}
 
 
-var newRow = createRow(x)
-containerEl.append(newRow);
 
 // For every row add data-time = 9AM etc....
 
