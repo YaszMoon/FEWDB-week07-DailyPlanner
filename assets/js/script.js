@@ -17,7 +17,7 @@ function createRow(time) {
   var timeEl = $('<div class="hour col-1">');
   timeEl.text(time);
   // Create div for description class="description col-8"
-  var descripEl = $('<div class="description textarea col-10">');
+  var descripEl = $('<input type="text" class="description textarea col-10">');
 
   // Check time and add styling for past, present and future time slots
   var timeCheck = moment(time, "hA");
