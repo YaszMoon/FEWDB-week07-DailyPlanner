@@ -4,7 +4,7 @@
 
 This week's challenge was to create a daily planner using jQuery.
 
-Visit the deployed page [here](https://yaszmoon.github.io/FEWDB-week07/).
+Visit the deployed page [here](https://yaszmoon.github.io/FEWDB-week07-DailyPlanner/).
 
 ## User Story
 
