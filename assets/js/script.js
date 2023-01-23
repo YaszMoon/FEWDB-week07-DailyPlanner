@@ -17,7 +17,7 @@ function createRow(time) {
   var timeEl = $('<div class="hour col-1">');
   timeEl.text(time);
   // Create div for description class="description col-8"
-  var descripEl = $('<input type="text" class="description textarea col-10">');
+  var descripEl = $(`<input type="text" class="description textarea col-10"> data-timeSlot=${time}`);
 
   // Check time and add styling for past, present and future time slots
   var timeCheck = moment(time, "hA");
@@ -30,7 +30,7 @@ function createRow(time) {
   }
 
   // Create i for save button class="saveBtn col-2 fa-solid fa-floppy-disk"
-  var btnEl = $('<div class="saveBtn col-1"><i class="fas fa-save"></div>');
+  var btnEl = $(`<div class="saveBtn col-1"><i class="fas fa-save" data-id=${time}></div>`);
   rowEl.append(timeEl, descripEl, btnEl);
 
   return rowEl;
@@ -41,3 +41,10 @@ for (var i = 0; i < timeSlots.length; i++) {
   var newRow = createRow(timeSlots[i]);
   containerEl.append(newRow);
 }
+
+$('.saveBtn i').on('click', function(event) {
+  if (event.target.dataset.id == '9AM') {
+  console.log("here")} else {
+    console.log('not here')
+  }
+})
