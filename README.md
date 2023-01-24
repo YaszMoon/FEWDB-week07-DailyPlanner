@@ -2,7 +2,7 @@
 
 ## Description
 
-This week's challenge was to create a daily planner using jQuery.
+This week's challenge was to create a daily planner using jQuery. HTML and CSS starter coder were given.
 
 Visit the deployed page [here](https://yaszmoon.github.io/FEWDB-week07-DailyPlanner/).
 
@@ -32,4 +32,4 @@ It is done when the app:
 
 ## Visuals
 
-*To be added.*
+![Daily Planner Demo](./assets/videos/daily-planner-demo.gif)
